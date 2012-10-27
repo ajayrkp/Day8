@@ -13,14 +13,13 @@ nav,#main ul {
 }
 
 /* Eliminate bullets */
-nav ul {
-	list-style-type: none;
+nav {
+	list-style: none;
 }
 
 /* Set display */
 nav li {
 	display: inline-block;
-	position: relative;
 }
 
 /* Add padding, Style fonts */
@@ -37,29 +36,40 @@ nav a {
 	color: blue;
 	background-color: ghostWhite;
 }
-#main li:hover ul {
-	left:0;
+
+/* Drop Down */
+nav li {
+	position: relative;
 }
+
+li>ul {
+	position: absolute;
+	left: -9999px;
+	text-align: left;
+	background-color: yellowGreen;
+}
+
+li ul>li {
+	padding-top: 10px;
+	display: inline-block;
+}
+
+#main ul a {
+	white-space: nowrap;
+	display: block;
+}
+
+#main li:hover ul {
+	left: 0;
+}
+
 #main li:hover ul a {
 	text-decoration: none;
-	color:white;
-	background:magenta;
+	color: white;
+	background: magenta;
 }
+
 #main li:hover ul a:hover {
 	color: red;
 	background: aqua;
-}
-#main ul a {
-	white-space: nowrap;
-	display:block;
-}
-li > ul {
-	position: absolute;
-	left:-9999px;
-	text-align:left;
-	background-color: yellowGreen;
-}
-li ul > li {
-	padding-top: 10px;
-	display: inline-block;
 }

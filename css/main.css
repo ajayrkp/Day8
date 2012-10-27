@@ -50,7 +50,7 @@ strong {
 
 /* background color and image */
 body {
-	background-image: url('../images/bats.gif'); 
+	background-image: url('../images/bats.gif');
 }
 
 section {
@@ -63,6 +63,7 @@ header {
 
 #top {
 	background: lightblue;
+	border-radius: 25px;
 }
 
 footer {
@@ -89,7 +90,7 @@ section {
 }
 
 header img {
-	float: left;
+	padding-right: 15px;
 }
 
 hgroup {
@@ -151,36 +152,8 @@ footer {
 	background-image: -webkit-linear-gradient(45deg, black 0%, orange 25%, white 100%);
 }
 
-
-/* Layout */
-form {
-	width: 450px;
-	margin: 0 auto;
-	padding: 15px;
-}
-label {
-	width: 10em;
-	padding-right: 1em;
+/* float layout */
+header img {
 	float: left;
 }
-#data input {
-	float: left;
-	width: 15em;
-	margin-botton: .5em;
-}
 
-#buttons input {
-	float: left;
-	margin-bottom: .5em;
-}
-br {
-	clear: left;
-}
-#mainContent {
-	text-align: center;
-}
-
-/* Presentation */
-form {
-	border:2px solid navy;
-}

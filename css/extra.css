@@ -59,7 +59,7 @@ tr:hover {
 	#mainContent {
 		background-color: rgb(195, 214,155);
 		height:650px;
-		padding: 1px;
+		padding: 0px;
 		border-width:2px;
 		border-style:solid;
 		border-color: magenta;

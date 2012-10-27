@@ -9,26 +9,52 @@
 <title>Homer’s Online Music Shop</title>
 
 <link rel="shortcut icon" href="images/homer.ico" />
-
 <link rel="stylesheet" href="css/main.css" />
-
 <link rel="stylesheet" href="css/nav.css" />
 
+<style>
+	caption {
+		text-align:center;
+		font-size:150%;
+		font-weight:bold;
+		margin: .5em 0;
+	}
+	th, td {
+		padding: .2em 3em .2em 0;
+	}
+	th.right, td.right {
+		text-align: right;
+		padding: 5px;
+	}
+	th.left, td.left {
+		text-align: left;
+	}
+	th {
+		vertical-align:top;
+	}
+	td a {
+		color:black;
+	}
+	thead {
+		font-weight: bold;
+		color:gray;
+	}
+	tbody tr:nth-child(4n+1) {
+		background-color:silver;
+	}
+
+</style>
 </head>
 
 <body>
 
 	<header>
-
 		<img src="images/Homer_Rock_and_Roll.jpg" alt="Homer" width="100"
 			height="100" />
 
 		<hgroup>
-
 			<h1>Homer's Music Store</h1>
-
 			<h2>Rock On!</h2>
-
 		</hgroup>
 
 
@@ -99,7 +125,8 @@
 
 						<li><a href="canvas.html">Canvas</a></li>
 
-						<li><a href="geolocation.html">Geolocation</a>
+						<li><a href="geolocation.html">Geolocation</a></li>
+
 						<li><a href="cube.html">Animation</a></li>
 
 					</ul></li>
@@ -123,38 +150,60 @@
 		</header>
 
 		<!-- Content Starts Here -->
+		<h2>Address Book</h2>
+		<table id="contacts">
+			<caption>Contact List</caption>
+			<thead>
+				<tr>
+					<th class="left">Category</th>
+					<th class="left">Name</th>
+					<th class="left">Email</th>
+					<th class="right">Phone</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th rowspan="4" class="left">Home</th>
+					<td class="left">Homer Simpson</td>
+					<td class="left">chunkeylover53@aol.com</td>
+					<td class="right">555-6528</td>
+				</tr>
+				<tr>
+					<td class="left">Ned Flanders</td>
+					<td class="left">holyrollers2@aol.com</td>
+					<td class="right">555-6528</td>
+				</tr>
+				<tr>
+					<td class="left">Clancy Wiggum</td>
+					<td class="left">bsharpest@aol.com</td>
+					<td class="right">555-2345</td>
+				</tr>
+				<tr>
+					<td class="left">Montgomery Burns</td>
+					<td class="left">ajb@aol.com</td>
+					<td class="right">555-8765</td>
+				</tr>
+				<tr>
+					<th rowspan="2" class="left">Business</th>
+					<td class="left">Moe's Tavern</td>
+					<td class="left">moe@moestavern.com</td>
+					<td class="right">555-8707</td>
+				</tr>
+				<tr>
+					<td class="left">Kamp Krusty</td>
+					<td class="left">krusty@know.com</td>
+					<td class="right">555-4567</td>
+				</tr>
+			</tbody>
+		</table>
 
-		<h2>Home Page</h2>
 
 
 
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-			diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-			erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-			tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-			consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-			velit esse molestie consequat, vel illum dolore eu feugiat nulla
-			facilisis at vero eros et accumsan et iusto odio dignissim qui
-			blandit praesent luptatum zzril delenit augue duis dolore te feugait
-			nulla facilisi.</p>
-
-		<p>
-			Click on the <A
-				href="mailto:homer@homermusic.com&Subject=Hello%20Homer">email
-				link</a> to at vero eros et accumsan et iusto odio dignissim qui blandit
-			praesent luptatum zzril delenit augue duis dolor.
-		</p>
 
 
 
-		<h2>Our guarantee</h2>
-
-		<p>
-			If you aren't completely satisfied with everything you buy from my
-			site, you can keep it.<strong> No questions asked!</strong>
-		</p>
-
-		</article>
 
 		<!-- Content Ends Here-->
 
