@@ -1,0 +1,43 @@
+<!--  
+HW_1: 
+A store is having a sale. They are giving 10% off purchases 
+of $10 or lower and 20% off purchases of greater than $10. Write 
+a short program that displays the discount (10% or 20%) and the 
+final price.
+
+Use a form to capture the item’s cost, output the discount and 
+the discounted price (and anything else you want). Run as many 
+cases necessary to test the program.
+-->
+
+
+<!DOCTYPE html>
+
+<head>
+    <title>My Product Discount Calculator... used by Newton, you know</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../hw_6.css" />
+</head>
+
+<body>
+    <div id="content">
+        <h1>My Product Discount Calculator...</h1><h2> (Walmart uses it everyday, you know)</h2>
+        <form action="display_discount.php" method="post">
+
+            <div id="data">
+                <label>Product Description:</label>
+                <input type="text" name="product_description" value="Secret..."/><br />
+
+                <label>List Price:</label>
+                <input type="number" name="list_price"  required="true"/><br />
+            </div>
+
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="Calculate Discount" /><br />
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
