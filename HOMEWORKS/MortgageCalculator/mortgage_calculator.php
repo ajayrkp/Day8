@@ -4,6 +4,14 @@
     $loan_duration = $_POST['loan_duration'];
     $interest_rate = $_POST['interest_rate'];
 
+    /* Formula for monthly payment
+     * 	c = [P.r.(1+r)^N] / [(1+r)^N - 1]
+     * where c - monthly payment
+     *       P - Principal Amount
+     *       r - Monthly rate of interest
+     *       N = total months of the loan
+     */
+    
     // Principal
     $P = $loan_amount;
     
