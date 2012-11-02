@@ -48,7 +48,7 @@
         <label id="tabbed">Loan Duration:</label>&nbsp;<span><?php echo $loan_duration; ?></span>&nbsp;year(s)
         <label id="tabbed">Interest Rate:</label>&nbsp;<span><?php echo $interest_rate; ?></span>%<br /><br /><br />
         
-        <label>Monthly Payment: </label>&nbsp;$<span><?php echo $c; ?></span><br /><br />
+        <label>Monthly Payment: </label>&nbsp;$<span><?php echo round($c,2); ?></span><br /><br />
         
        <table align="center" border="10" bgcolor="magenta">
         	<tr>
@@ -68,9 +68,9 @@
 			?>
         	<tr>
         		<td><?php echo $month; ?></td>
-        		<td><?php echo "$" . $thisPrincipal; ?></td>
-        		<td><?php echo "$" . $monthlyInterest; ?></td>
-        		<td><?php if ($RemainingPrincipal > 1) { echo "$" . $RemainingPrincipal;} else {echo "0";} ?></td>
+        		<td><?php echo "$" . round($thisPrincipal,2); ?></td>
+        		<td><?php echo "$" . round($monthlyInterest,2); ?></td>
+        		<td><?php if ($RemainingPrincipal > 1) { echo "$" . round($RemainingPrincipal,2);} else {echo "0";} ?></td>
         		<td>
         			<div style="<?php echo $baseStylePrincipal; ?>" />
         			<div style="<?php echo $baseStyleInterest; ?>" />
