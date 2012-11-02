@@ -86,7 +86,7 @@ calculats the Principal and interest components for each month.
 
                 <label>Loan Interest Rate:</label>
                 <select name="interest_rate" >
-                	<?php for ($i=0; $i<=25; $i+=0.125) {?> 
+                	<?php for ($i=0.125; $i<=25; $i+=0.125) {?> 
                 		<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                		<?php } ?>
 				</select>%<br />
